@@ -84,7 +84,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
         Profile::create(['user_id'=>$user->id]);
-        Subjects::create(['user_id'=> $user->id]);
+        subjects::create(['user_id'=> $user->id]);
         return $user;
     }
 }
