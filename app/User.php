@@ -42,4 +42,8 @@ public function profile(){
 return $this->hasOne('App\Profile');
 
 }
+public function subjects(){
+
+  return $this->hasOne('App\Subjects');
+}
 }
