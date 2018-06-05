@@ -24,7 +24,7 @@ class CreateSubjectsTable extends Migration
         $table->boolean('CRE')->default(0)->nullable();
         $table->boolean('Music')->default(0)->nullable();
         $table->boolean('Physics')->default(0)->nullable();
-          $table->timestamps();
+        $table->timestamps();
         });
     }
 
