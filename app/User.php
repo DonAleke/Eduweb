@@ -7,7 +7,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-  const ADMIN_TYPE = 'admin';
+
+const ADMIN_TYPE = 'admin';
 const DEFAULT_TYPE = 'default';
 const TEACHER_TYPE = 'teacher';
 
@@ -30,4 +31,10 @@ const TEACHER_TYPE = 'teacher';
     protected $hidden = [
         'password', 'remember_token',
     ];
+   public function isAdmin()    {
+    return $this->type === self::ADMIN_TYPE;
+}
+  public function teacher()    {        
+    return $this->type === self::TEACHER_TYPE;
+}
 }
