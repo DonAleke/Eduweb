@@ -34,7 +34,12 @@ const TEACHER_TYPE = 'teacher';
    public function isAdmin()    {
     return $this->type === self::ADMIN_TYPE;
 }
-  public function teacher()    {        
+  public function teacher()    {
     return $this->type === self::TEACHER_TYPE;
+}
+public function profile(){
+
+return $this->hasOne('App\Profile');
+
 }
 }
