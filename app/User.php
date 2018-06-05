@@ -20,7 +20,7 @@ const TEACHER_TYPE = 'teacher';
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+          'name', 'email', 'password', 'avatar', 'slug', 'gender', 'type'
     ];
 
     /**
